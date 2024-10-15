@@ -102,8 +102,7 @@ body {
                 margin-top: 15px;
                 overflow: scroll;
                 display:flex;
-                flex-direction: column;
-                flex-start : end;
+                flex-direction: column-reverse;
 
                 .divLastAction {
                     width: 100%;
