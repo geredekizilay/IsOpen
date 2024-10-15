@@ -101,6 +101,9 @@ body {
                 height: 300px;
                 margin-top: 15px;
                 overflow: scroll;
+                display:flex;
+                flex-direction: column;
+                flex-start : end;
 
                 .divLastAction {
                     width: 100%;
