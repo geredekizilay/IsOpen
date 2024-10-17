@@ -29,14 +29,17 @@
                     </div>
                 </div>
             </div>
-            <div class="lastEntrance">
+            <div class="lastEntrance" id="idforlastEntranceArea1">
                 <div class="lastEntranceHeader">
                     <h2>Giriş Geçmişi</h2>
                 </div>
-                <div class="lastEntranceArea" id="idforlastEntranceArea">
-
+                <div class="lastEntranceArea" id="idforlastEntranceArea" style="transition: 0.3s all ease-in-out;">
                 </div>
             </div>
+            <div class="BasaGitBtn" style="margin-top: 20px;">
+                <input type="button" onclick="yukleBtn()" value="Başa Git">
+            </div>
+           
         </div>
     </div>
 </body>
@@ -87,11 +90,13 @@
 </script>
 
 <script>
-    function yukle() {
 
+    function yukleBtn(){
         var element = document.getElementById("idforlastEntranceArea");
-        element.scrollTop == -10000000;
+        element.scrollTop -= 1000000000;
     }
+
+
 </script>
 
 </html>
