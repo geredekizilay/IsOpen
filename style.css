@@ -37,6 +37,26 @@ body {
     }
 }
 
+.BasaGitBtn{
+    width: 90%;
+}
+
+.BasaGitBtn input{
+    padding: 10px;
+    border-radius: 15px;
+    outline: 0px;
+    border: 1px solid rgba(0, 128, 0, 0);
+    cursor: pointer;
+    width: 100%;
+    background-color:#443C68;
+    color: white;
+    transition: 0.3s all ease-in-out;
+}
+
+.BasaGitBtn input:hover{
+    background-color: #aa99e2;
+}
+
 .LastAction-left i{
     color: white;
 }
