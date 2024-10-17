@@ -1,9 +1,40 @@
-
-[
-  {
-    "id": 1,
-    "name": "Leanne Graham",
-    "username": "Bret",
-    "email": "Sincere@april.biz",
+[{
+        "id": 1,
+        "userIcon": "fi fi-rr-user",
+        "IsimSoyisim": "Emirhan Yılmaz",
+        "IsOpenStatus": "Şube Açıldı",
+        "dateInfo": "14.10.2024",
+        "timeInfo": "17:43"
+    },
+    {
+        "id": 2,
+        "userIcon": "fi fi-rr-user",
+        "IsimSoyisim": "Emirhan Yılmaz",
+        "IsOpenStatus": "Şube Kapandı",
+        "dateInfo": "14.10.2024",
+        "timeInfo": "22:07"
+    },
+    {
+        "id": 3,
+        "userIcon": "fi fi-rr-user",
+        "IsimSoyisim": "Mert Hamurci",
+        "IsOpenStatus": "Şube Açıldı",
+        "dateInfo": "15.10.2024",
+        "timeInfo": "17:29"
+    }, {
+        "id": 4,
+        "userIcon": "fi fi-rr-user",
+        "IsimSoyisim": "Mert Hamurci",
+        "IsOpenStatus": "Şube Kapandı",
+        "dateInfo": "15.10.2024",
+        "timeInfo": "22:27"
+    },
+    {
+        "id": 5,
+        "userIcon": "fi fi-rr-time-twenty-four",
+        "IsimSoyisim": "Mert Hamurci",
+        "IsOpenStatus": "Şube Gün Boyu Kapalı",
+        "dateInfo": "15.10.2024",
+        "timeInfo": "22:27"
     }
-  ]
+]
