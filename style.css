@@ -10,6 +10,15 @@ body {
     background-color: #18122B;
 }
 
+.lastEntranceHeader h2{
+    color: white !important;
+}
+
+.navSec{
+    color: white !important;
+    text-align: center;
+}
+
 .navbar {
     display: flex;
     justify-content: center;
@@ -19,13 +28,17 @@ body {
     }
 
     h1 {
-        color: white;
+        color: white !important;;
     }
 
     h4 {
         text-align: center;
-        color: white;
+        color: white !important;
     }
+}
+
+.LastAction-left i{
+    color: white;
 }
 
 .container {
@@ -76,10 +89,18 @@ body {
                     width: 100%;
 
                     h2 {
-                        color: white;
+                        color: rgb(255, 255, 255) !important;
                     }
                 }
             }
+        }
+
+        .rightIsOpen h2{
+            color: white;
+        }
+        
+        .lastEntranceHeader h2{
+            color: white !important;
         }
 
         .lastEntrance {
@@ -91,11 +112,6 @@ body {
             height: 400px;
             background-color: #393053;
 
-            .lastEntranceHeader {
-                h2 {
-                    color: white;
-                }
-            }
 
             .lastEntranceArea {
                 height: 300px;
@@ -157,4 +173,24 @@ body {
             }
         }
     }
+}
+
+.LastAction-r--inner h3,h5{
+    color: white;
+    line-height: 15px;
+}
+
+.LastAction-r--inner h5{
+
+        color: #aa99e2;
+}
+
+.LastAction-r--inner p{
+        font-size: 12px;
+        line-height: 15px;
+        color: white;
+}
+
+.timeInfo {
+    margin-right: 10px;
 }
