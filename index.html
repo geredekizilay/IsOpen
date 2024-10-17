@@ -2,6 +2,7 @@
 <html lang="tr">
 
 <head>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
@@ -9,7 +10,7 @@
     <title>Kızılay Gerede | Şube Aktiflik Durumu</title>
 </head>
 
-<body>
+<body onload="yukle()">
     <div class="navbar">
         <div class="navSec">
             <h1>Türk Kızılay | Gerede</h1>
@@ -24,8 +25,7 @@
                         <div class="divStatusCircle">
                         </div>
                     </div>
-                    <div class="rightIsOpen">
-                        <h2>Şube Kapalı</h2>
+                    <div class="rightIsOpen" id="SubeStatus">
                     </div>
                 </div>
             </div>
@@ -33,96 +33,65 @@
                 <div class="lastEntranceHeader">
                     <h2>Giriş Geçmişi</h2>
                 </div>
-                <div class="lastEntranceArea">
-                    <div class="divLastAction">
-                        <div class="LastAction-left">
-                            <i class="fi fi-rr-user"></i>
-                        </div>
-                        <div class="LastAction-R">
-                            <div class="LastAction-r--inner">
-                                <div class="basli">
-                                    <h3>Emirhan Yılmaz</h3>
-                                    <h5>Şube Açıldı</h5>
-                                </div>
-                                <div class="timeInfo">
-                                    <p>14.10.24</p>
-                                    <p>17:43</p>
-                                </div>
-                            </div>
-                        </div>     
-                    </div> 
-                    <div class="divLastAction">
-                        <div class="LastAction-left">
-                            <i class="fi fi-rr-user"></i>
-                        </div>
-                        <div class="LastAction-R">
-                            <div class="LastAction-r--inner">
-                                <div class="basli">
-                                    <h3>Emirhan Yılmaz</h3>
-                                    <h5>Şube Kapandı</h5>
-                                </div>
-                                <div class="timeInfo">
-                                    <p>14.10.24</p>
-                                    <p>22:07</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                                        <div class="divLastAction">
-                        <div class="LastAction-left">
-                            <i class="fi fi-rr-user"></i>
-                        </div>
-                        <div class="LastAction-R">
-                            <div class="LastAction-r--inner">
-                                <div class="basli">
-                                    <h3>Mert Hamurci</h3>
-                                    <h5>Şube Açıldı</h5>
-                                </div>
-                                <div class="timeInfo">
-                                    <p>15.10.24</p>
-                                    <p>17:29</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                     <div class="divLastAction">
-                        <div class="LastAction-left">
-                            <i class="fi fi-rr-user"></i>
-                        </div>
-                        <div class="LastAction-R">
-                            <div class="LastAction-r--inner">
-                                <div class="basli">
-                                    <h3>Mert Hamurci</h3>
-                                    <h5>Şube Kapandı</h5>
-                                </div>
-                                <div class="timeInfo">
-                                    <p>15.10.24</p>
-                                    <p>22:27</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>                 
-                    <div class="divLastAction">
-                        <div class="LastAction-left">
-                           <i class="fi fi-rr-time-twenty-four"></i>
-                        </div>
-                        <div class="LastAction-R">
-                            <div class="LastAction-r--inner">
-                                <div class="basli">
-                                    <h3>Mert Hamurci</h3>
-                                    <h5>Şube Gün Boyu Kapalı</h5>
-                                </div>
-                                <div class="timeInfo">
-                                    <p>16.10.24</p>
-                                    <p>00:00</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="lastEntranceArea" id="idforlastEntranceArea">
+
                 </div>
             </div>
         </div>
     </div>
 </body>
+<script>
+    fetch('dataSubeStatus.json')
+        .then(res => {
+            return res.json();
+        })
+        .then(data => {
+            data.forEach(user => {
+                const markup = `<h2>${user.SubeStatus}</h2>`;
+                document.getElementById('SubeStatus').insertAdjacentHTML('beforeend', markup);
+                $('.divStatusCircle').addClass(`${user.IsOpenStatus}`);
+            })
+        })
+
+    .catch(error => console.log(error));
+</script>
+<script>
+    fetch('data.json')
+        .then(res => {
+            return res.json();
+        })
+        .then(data => {
+            data.forEach(user => {
+                var markup = `<div class="divLastAction">
+                        <div class="LastAction-left">
+                            <i class='${user.userIcon}'></i>
+                        </div>
+                        <div class="LastAction-R">
+                            <div class="LastAction-r--inner">
+                                <div class="basli">
+                                    <h3>${user.IsimSoyisim}</h3>
+                                    <h5>${user.IsOpenStatus}</h5>
+                                </div>
+                                <div class="timeInfo">
+                                    <p>${user.dateInfo}</p>
+                                    <p>${user.timeInfo}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>`;
+                document.getElementById('idforlastEntranceArea').insertAdjacentHTML('beforeend', markup);
+            })
+        })
+
+    .catch(error => console.log(error));
+</script>
+
+<script>
+    function yukle() {
+
+        var element = document.getElementById("idforlastEntranceArea");
+        element.scrollTop -= 100000000;
+    }
+</script>
 
 </html>
