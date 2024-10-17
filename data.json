@@ -52,5 +52,14 @@
         "IsOpenStatus": "Şube Açıldı",
         "dateInfo": "17.10.2024",
         "timeInfo": "17:39"
+    },
+    {
+        "id": 6,
+        "userIcon": "fi fi-rr-user",
+        "IsimSoyisim": "Mert Hamurci",
+        "IsOpenStatus": "Şube Kapandı",
+        "dateInfo": "17.10.2024",
+        "timeInfo": "19:02"
     }
+    
 ]
