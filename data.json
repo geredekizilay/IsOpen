@@ -60,6 +60,14 @@
         "IsOpenStatus": "Şube Kapandı",
         "dateInfo": "17.10.2024",
         "timeInfo": "19:02"
+    },
+    {
+        "id": 6,
+        "userIcon": "fi fi-rr-user",
+        "IsimSoyisim": "Emirhan Yılmaz",
+        "IsOpenStatus": "Şube Açıldı",
+        "dateInfo": "18.10.2024",
+        "timeInfo": "14:46"
     }
     
 ]
