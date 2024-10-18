@@ -68,6 +68,14 @@
         "IsOpenStatus": "Şube Açıldı",
         "dateInfo": "18.10.2024",
         "timeInfo": "14:46"
+    },    
+    {
+        "id": 6,
+        "userIcon": "fi fi-rr-user",
+        "IsimSoyisim": "Eren Apaydın",
+        "IsOpenStatus": "Şube Kapandı",
+        "dateInfo": "18.10.2024",
+        "timeInfo": "22:14"
     }
     
 ]
