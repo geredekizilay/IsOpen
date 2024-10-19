@@ -54,7 +54,7 @@ body {
 }
 
 .BasaGitBtn input:hover{
-    background-color: #aa99e2;
+    background-color: #16060f;
 }
 
 .LastAction-left i{
@@ -70,7 +70,7 @@ body {
         flex-direction: column;
 
         .SubeIsOpen {
-            border: 1px solid #aa99e2;
+            border: 1px solid #16060f;
             width: 90%;
             border-radius: 15px;
             background-color: #393053;
@@ -202,7 +202,7 @@ body {
 
 .LastAction-r--inner h5{
 
-        color: #aa99e2;
+        color: #a02e6e;
 }
 
 .LastAction-r--inner p{
