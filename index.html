@@ -92,8 +92,13 @@
 <script>
 
         $(document).ready(function() {
-        var element = document.getElementById("idforlastEntranceArea");
-        element.scrollTop -= 1000000000;
+        setTimeout(function() {
+            var element = document.getElementById("idforlastEntranceArea");
+            element.scrollTop -= 100000000;
+        }, 1500);
+    });
+
+        $(document).ready(function() {
         if (!$(".divStatusCircle").hasClass("Open")) {
             $("body").css("background-color", "#000e20");
             $(".SubeIsOpen").css("background-color", "#2e0720");
