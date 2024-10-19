@@ -85,13 +85,21 @@
         "dateInfo": "19.10.2024",
         "timeInfo": "15:03"
     },
-               {
+    {
         "id": 6,
         "userIcon": "fi fi-rr-user",
         "IsimSoyisim": "Mert Hamurci",
         "IsOpenStatus": "Şube Kapandı",
         "dateInfo": "19.10.2024",
         "timeInfo": "22:13"
+    },
+    {
+        "id": 6,
+        "userIcon": "fi fi-rr-user-time",
+        "IsimSoyisim": "Yunus Emre Halıcı",
+        "IsOpenStatus": "Tahmini Açılış",
+        "dateInfo": "20.10.2024",
+        "timeInfo": "11:30"
     }
     
 ]
