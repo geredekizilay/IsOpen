@@ -100,6 +100,14 @@
         "IsOpenStatus": "Tahmini Açılış",
         "dateInfo": "20.10.2024",
         "timeInfo": "11:30~"
+    },
+    {
+        "id": 6,
+        "userIcon": "fi fi-rr-user-time",
+        "IsimSoyisim": "Yunus Emre Halıcı",
+        "IsOpenStatus": "Şube Açıldı",
+        "dateInfo": "20.10.2024",
+        "timeInfo": "11:03"
     }
     
 ]
