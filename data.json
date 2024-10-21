@@ -108,6 +108,14 @@
         "IsOpenStatus": "Şube Açıldı",
         "dateInfo": "20.10.2024",
         "timeInfo": "11:03"
+    },
+    {
+        "id": 6,
+        "userIcon": "fi fi-rr-user",
+        "IsimSoyisim": "Yunus Emre Halıcı",
+        "IsOpenStatus": "Şube Kapandı",
+        "dateInfo": "20.10.2024",
+        "timeInfo": "21:37"
     }
     
 ]
