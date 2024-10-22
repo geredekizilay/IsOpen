@@ -116,6 +116,14 @@
         "IsOpenStatus": "Şube Kapandı",
         "dateInfo": "20.10.2024",
         "timeInfo": "21:37"
+    },
+    {
+        "id": 6,
+        "userIcon": "fi fi-rr-user",
+        "IsimSoyisim": "İbrahim Bilgin",
+        "IsOpenStatus": "Şube Açıldı",
+        "dateInfo": "22.10.2024",
+        "timeInfo": "16:10"
     }
     
 ]
